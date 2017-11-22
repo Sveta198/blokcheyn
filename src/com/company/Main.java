@@ -18,11 +18,28 @@ public class Main {
         System.out.println("Здравствуй мир");
         int[] array = {6, 9, 8, 25, 96, 47};
         int m = 999;
-        for (int i=0;i<6;i+=1){
-            if (m > array[i]){
-                m=array[i];
 
+        //Длинна заданного массива
+        int full_length = array.length;
+        for (int s=0;s<full_length;s+=1){
+            System.out.println(array [s]);
+        }
+        int l;
+
+        for (int i=0;i<6;i+=1){
+            for (int g=0;g<5;g+=1){
+                if (array[g]>array[g+1]){
+                   l= array[g];
+                   array[g]=array[g+1];
+                   array[g+1]=l;
+
+
+                }
             }
+        }
+
+        for (int s=0;s<full_length;s+=1){
+            System.out.println(array [s]);
         }
         System.out.println(m);
 //        int var1=5;
