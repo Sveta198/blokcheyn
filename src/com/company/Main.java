@@ -56,13 +56,13 @@ public class Main {
 //        System.out.println(var1);
 //        System.out.println(var2
 
-BufferedReader BR=null;
-BR=new BufferedReader(new InputStreamReader(System.in));
-String answer;
+        BufferedReader BR=null;
+        BR=new BufferedReader(new InputStreamReader(System.in));
+        String answer;
 
         int s=53;
         int start=0, finish=100, size=64;
-
+/*
         for(int povtor=0;povtor<5;povtor+=1) {
             System.out.print("ваше число меньше ");
             System.out.print(start + size);
@@ -84,9 +84,32 @@ String answer;
                 System.out.print("возникла ошибка чтения из буфера");
             }
         }
+*/
+        BufferedReader Br=null;
+        Br=new BufferedReader(new InputStreamReader(System.in));
 
 
 
-    }
+            try {
+
+                answer = Br.readLine();
+
+                for (int k=0; k<answer.length() ;k++){
+                    System.out.println(answer.charAt(k));
+                }
+
+                if ("da".equalsIgnoreCase(answer)) {
+
+                } else {
+
+                }
+            } catch (IOException E) {
+                System.out.print("возникла ошибка чтения из буфера");
+            }
+        }
+
+
+
+
 }
 
