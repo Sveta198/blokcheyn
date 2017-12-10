@@ -93,10 +93,17 @@ public class Main {
             try {
 
                 answer = Br.readLine();
+                int f=0;
 
                 for (int k=0; k<answer.length() ;k++){
                     System.out.println(answer.charAt(k));
+                    if (' ' == answer.charAt(k))
+                    {
+                        System.out.println("найден пробел");
+                        f++;
+                    }
                 }
+                System.out.println(f);
 
                 if ("da".equalsIgnoreCase(answer)) {
 
