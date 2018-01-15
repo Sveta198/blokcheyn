@@ -8,7 +8,7 @@ import java.io.StringReader;
 public class Main {
 
     public static void main(String[] args) {
-        int a;
+       /* int a;
         int b;
         b = 8;
         a = 5;
@@ -46,7 +46,7 @@ public class Main {
         for (int s = 0; s < full_length; s += 1) {
             System.out.println(array[s]);
         }
-        System.out.println(m);
+        System.out.println(m);*/
 //        int var1=5;
 //        int var2=8;
 //        int var3;
@@ -56,12 +56,12 @@ public class Main {
 //        System.out.println(var1);
 //        System.out.println(var2
 
-        BufferedReader BR=null;
+     /*   BufferedReader BR=null;
         BR=new BufferedReader(new InputStreamReader(System.in));
         String answer;
 
         int s=53;
-        int start=0, finish=100, size=64;
+        int start=0, finish=100, size=64;*/
 /*
         for(int povtor=0;povtor<5;povtor+=1) {
             System.out.print("ваше число меньше ");
@@ -85,7 +85,7 @@ public class Main {
             }
         }
 */
-        BufferedReader Br=null;
+       /* BufferedReader Br=null;
         Br=new BufferedReader(new InputStreamReader(System.in));
 
 
@@ -112,7 +112,33 @@ public class Main {
                 }
             } catch (IOException E) {
                 System.out.print("возникла ошибка чтения из буфера");
+            }*/
+            BufferedReader Br=null;
+            Br = new BufferedReader(new InputStreamReader(System.in));
+
+            String user_input;
+            int probel=0;
+            boolean probelchiki=false;
+            try {
+                user_input = Br.readLine();
+                System.out.print(user_input);
+                //с этого момента юзер ин пут содержит всю введенную пользователем строку
+            for (int i=0;i<user_input.length();i++){
+                if(user_input.charAt(i)==' '){
+                 if (!probelchiki){
+                     probel++;
+                 }
+                 probelchiki=true;
+                }else {
+                    probelchiki=false;
+                }
             }
+            }catch (IOException E){
+                System.out.print("возникла ошибка чтения из буфера");
+            }
+
+            System.out.print(probel+1);
+
         }
 
 
@@ -120,3 +146,10 @@ public class Main {
 
 }
 
+/*   $user_input = php://input
+
+        $parts = explode($user_input,' ');
+        print(count($parts));
+*
+*
+* */
