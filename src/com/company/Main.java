@@ -113,6 +113,7 @@ public class Main {
             } catch (IOException E) {
                 System.out.print("возникла ошибка чтения из буфера");
             }*/
+       /*System.out.print("Данная программа считает количество слов в предложении:1) Введите предложение,\n 2)Нажатие клавиши Enter отправит предложение в программу,\n");
             BufferedReader Br=null;
             Br = new BufferedReader(new InputStreamReader(System.in));
 
@@ -137,11 +138,22 @@ public class Main {
                 System.out.print("возникла ошибка чтения из буфера");
             }
 
-            System.out.print(probel+1);
+            System.out.print(probel+1);*/
 
+        // TODO Implement me
+        int x = 46867;
+        int tsiferka = 0;
+
+        //Get last digit
+        while (x > 0) {
+            tsiferka = x % 10;
+            tsiferka=tsiferka*tsiferka;
+            System.out.println(tsiferka);
+            x = x / 10;
         }
 
 
+    }
 
 
 }
